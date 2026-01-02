@@ -4,6 +4,7 @@ services:
   app:
     ports:
       - "${APP_PORT-3000}:${APP_PORT-3000}"
+    entrypoint: []
     command: bash -c "ls -al && /bin/bash run.sh"
     env_file:
       - .env

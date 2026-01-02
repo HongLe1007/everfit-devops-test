@@ -18,3 +18,9 @@ COPY . .
 
 # Expose the port the app runs on
 EXPOSE 3000
+
+# Make run.sh executable
+RUN chmod +x ./run.sh
+
+# Set entrypoint
+ENTRYPOINT ["./run.sh"]
